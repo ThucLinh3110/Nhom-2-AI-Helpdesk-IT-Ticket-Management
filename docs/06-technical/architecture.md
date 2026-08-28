@@ -1,8 +1,4 @@
-# Kiến trúc Hệ thống (Architecture)
-
-**Ý tưởng cốt lõi**: Xây dựng một hệ thống IT Helpdesk tích hợp AI, cho phép người dùng báo lỗi (qua văn bản hoặc giọng nói), theo dõi tiến độ xử lý vé (ticket). Trợ lý thông minh (AI) chỉ đóng vai trò diễn giải yêu cầu, phân loại và gọi các chức năng có kiểm soát (structured tool calls); toàn bộ dữ liệu về trạng thái vé, danh mục lỗi, thời gian SLA và Knowledge Base luôn lấy từ và thuộc thẩm quyền quản lý của backend.
-
-## Sơ đồ Kiến trúc Tổng thể
+# Sơ đồ Kiến trúc Tổng thể
 
 ```mermaid
 graph TD
