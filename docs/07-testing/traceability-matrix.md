@@ -1,9 +1,7 @@
-| Requirement | Story | Tasks | Code/PR | Tests | Release |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| REQ-VC-05 | US-VC-05 | T-501..505 | PR #42 | TC-02..05 | v1.0.0 |
-| REQ-VC-07 | US-VC-07 | T-701..704 | PR #51 | TC-06 | v1.0.0 |
-| REQ-VC-08 | US-VC-08 | T-801..804 | PR #55 | TC-07 + E2E checkout | v1.0.0 |
-| REQ-VC-10 | US-VC-10/11 | admin tasks | PR #63 | TC-08 + admin E2E | v1.0.0 |
-| REQ-VC-12 | US-VC-12 | fallback tasks | PR #39 | TC-09/10 | v1.0.0 |
-
-
+| Mã REQ | Luồng (Story) | Người phụ trách | Link Taiga | Link Figma | API Endpoint(s) | Cách test | Pass/Fail |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **REQ-HD-01, 02** | Story 1: Tạo & Theo dõi Ticket | Hoa | `https://tree.taiga.io/project/thuclinh3110-nhom-2-ai-helpdesk-it-ticket-management/epic/1` | Màn hình Tạo & Theo dõi Ticket (Employee) | `POST /api/tickets`<br>`GET /api/tickets`<br>`POST /api/tickets/:id/attachments` | Postman + Click tay Figma | **Pass** |
+| **REQ-HD-03, 04, 05, 06** | Story 2: AI Phân loại & Phân công | Linh | `https://tree.taiga.io/project/thuclinh3110-nhom-2-ai-helpdesk-it-ticket-management/epic/2` | Màn hình Dashboard Quản lý IT | `POST /api/ai/classify`<br>`POST /api/tickets/:id/assign`<br>`GET /api/tickets` | Postman (check JSON) + Figma | **Pass** |
+| **REQ-HD-07, 08, 09, 10** | Story 3: Xử lý & Phản hồi AI | Lụy | `https://tree.taiga.io/project/thuclinh3110-nhom-2-ai-helpdesk-it-ticket-management/epic/3` | Màn hình Ticket Detail (IT Agent) | `GET /api/tickets/:id`<br>`POST /api/tickets/:id/comments`<br>`POST /api/ai/suggest-reply` | Postman + Figma | **Pass** |
+| **REQ-HD-11** | Story 4: Cảnh báo & SLA | Ngân | `https://tree.taiga.io/project/thuclinh3110-nhom-2-ai-helpdesk-it-ticket-management/epic/4` | Màn hình Danh sách vé & Cảnh báo SLA | `GET /api/tickets/sla`<br>`GET /api/tickets/sla-breached` | Postman + Figma (Test đổi màu trạng thái) | **Pass** |
+| **REQ-HD-12** | Story 5: Knowledge Base | Ngọc | `https://tree.taiga.io/project/thuclinh3110-nhom-2-ai-helpdesk-it-ticket-management/epic/5` | Màn hình Thư viện IT (FAQ) | `GET /api/articles`<br>`GET /api/articles/:id`<br>`POST /api/articles` | Postman (thử tìm kiếm từ khóa) + Figma | **Pass** |
