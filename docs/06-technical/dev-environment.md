@@ -27,12 +27,12 @@ Mọi thành viên trong nhóm và người đánh giá bắt buộc tuân thủ
 
 ## 2. Quy ước Thư mục & Cấu trúc Repository
 
-Thư mục làm việc trên máy cá nhân không được chứa dấu tiếng Việt hoặc khoảng trắng (Ví dụ chuẩn: `D:\MIS3032\group-02-project` hoặc `~/MIS3032/group-02-project`).
+Thư mục làm việc trên máy cá nhân không được chứa dấu tiếng Việt hoặc khoảng trắng (Ví dụ chuẩn: `D:\MIS3032\Nhom-2-AI-Helpdesk-IT-Ticket-Management` hoặc `~/MIS3032/Nhom-2-AI-Helpdesk-IT-Ticket-Management`).
 
 Cấu trúc cây thư mục chuẩn của dự án:
 
 ```text
-group-02-project/
+Nhom-2-AI-Helpdesk-IT-Ticket-Management/
 ├── README.md                   # Giới thiệu dự án, hướng dẫn chạy nhanh
 ├── .gitignore                  # Bỏ qua .env, node_modules, .venv, dist...
 ├── .env.example                # Cấu hình biến môi trường mẫu (không có secret)
