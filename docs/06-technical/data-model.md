@@ -14,7 +14,3 @@ Tài liệu này định nghĩa cấu trúc dữ liệu chính (Entities) của 
 | **AIUsageLog** | `id, ticket_id, action, prompt_summary, response_summary, latency, created_at` | Redact các thông tin nhạy cảm; KHÔNG lưu trữ API Key |
 | **AuditLog** | `id, actor_id, action, target_type, target_id, changes, created_at` | Append-only (chỉ ghi thêm, không sửa/xóa); dùng để track lịch sử đổi trạng thái Ticket, gán việc |
 
-## Ghi chú
-- `Ticket` lưu trữ thông tin lỗi. `assignee_id` có thể null nếu chưa được phân công.
-- Thời gian `sla_due_at` được tính toán dựa trên mức độ ưu tiên (`priority`) lúc tạo vé hoặc khi AI tự động phân loại.
-- Bảng `AuditLog` đặc biệt quan trọng để đáp ứng yêu cầu NFR-HD-04 (lưu lịch sử mỗi khi trạng thái vé hoặc người phụ trách thay đổi).
