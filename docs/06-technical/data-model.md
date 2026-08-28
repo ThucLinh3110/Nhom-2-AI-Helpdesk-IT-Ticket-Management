@@ -14,3 +14,20 @@ Tài liệu này định nghĩa cấu trúc dữ liệu chính (Entities) của 
 | **AIUsageLog** | `id, ticket_id, action, prompt_summary, response_summary, latency, created_at` | Redact các thông tin nhạy cảm; KHÔNG lưu trữ API Key |
 | **AuditLog** | `id, actor_id, action, target_type, target_id, changes, created_at` | Append-only (chỉ ghi thêm, không sửa/xóa); dùng để track lịch sử đổi trạng thái Ticket, gán việc |
 
+## Sơ đồ Thực thể Liên kết (ERD)
+
+```mermaid
+erDiagram
+    USER ||--o{ TICKET : "creates (requester)"
+    USER ||--o{ TICKET : "assigned to (assignee)"
+    USER ||--o{ MESSAGE : "sends"
+    USER ||--o{ KNOWLEDGE_BASE : "authors"
+    USER ||--o{ AUDIT_LOG : "performs action"
+
+    TICKET ||--o{ MESSAGE : "contains"
+    TICKET ||--o{ ATTACHMENT : "has"
+    MESSAGE ||--o{ ATTACHMENT : "has"
+    
+    TICKET ||--o{ AI_USAGE_LOG : "analyzed by"
+    TICKET ||--o{ AUDIT_LOG : "tracked in"
+```
