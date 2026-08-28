@@ -8,16 +8,16 @@
 graph TD
     %% Khối Client
     subgraph Client ["Client"]
-        Input[Speech Input / TTS + text fallback]
-        WebApp[Web App React/Next.js]
+        Input["Speech Input / TTS + text fallback"]
+        WebApp["Web App React/Next.js"]
         Input --> WebApp
     end
 
     %% Khối Application (Backend)
     subgraph Application ["Application"]
-        APIAuth[API + Auth]
-        Orchestrator[Assistant Orchestrator (structured tool calls)]
-        DomainServices[Ticket / Knowledge Base / SLA Domain Services]
+        APIAuth["API + Auth"]
+        Orchestrator["Assistant Orchestrator (structured tool calls)"]
+        DomainServices["Ticket / Knowledge Base / SLA Domain Services"]
 
         WebApp -->|Requests| APIAuth
         APIAuth --> Orchestrator
@@ -28,9 +28,9 @@ graph TD
 
     %% Khối Data & External
     subgraph DataExternal ["Data & External"]
-        DB[(PostgreSQL)]
-        LLM[LLM Provider]
-        AuditLog[(Logs / Audit)]
+        DB[("PostgreSQL")]
+        LLM["LLM Provider"]
+        AuditLog[("Logs / Audit")]
     end
     
     DomainServices --> DB
