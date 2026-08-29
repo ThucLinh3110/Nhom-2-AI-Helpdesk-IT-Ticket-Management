@@ -1,7 +1,3 @@
-# User Flow — Dự án AI Helpdesk & IT Ticket
-### File: `docs/03-product/user-flow.mmd` (nội dung Mermaid bên dưới)
-### Phụ trách chính thức: Linh (Product/BA) — bản này Ngọc soạn giúp dựa trên 5 Story đã có
-
 Luồng đi: **Login → Tạo vé → AI phân loại → AI phản hồi/SLA → Đóng vé**, có nhánh lỗi/rẽ nhánh và nhánh Knowledge Base (tự phục vụ trước khi tạo vé).
 
 ```mermaid
@@ -57,7 +53,6 @@ flowchart TD
 
 ---
 
-## Giải thích các nhánh chính (để trình bày)
 
 ### Happy path (đường chính)
 Đăng nhập → Tạo vé → AI tự phân loại → Hiện trên Dashboard IT → IT Agent dùng AI gợi ý trả lời → Nhân viên nhận phản hồi → Đóng vé.
