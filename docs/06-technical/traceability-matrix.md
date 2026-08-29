@@ -1,6 +1,6 @@
 **Ma trận truy vết (Traceability Matrix)**
 
-| ID Yêu cầu (Bài 1) | User Story (Bài 2 - Taiga) | Giao diện (Figma / UI) | API / Kỹ thuật (Backend) | Bảng Dữ liệu (Database) |
+| ID Yêu cầu | User Story | Giao diện | API / Kỹ thuật | Bảng Dữ liệu |
 | :--- | :--- | :--- | :--- | :--- |
 | **REQ-HD-01**, **REQ-HD-02** | **US-HD-01.1:** Khách hàng tạo vé báo lỗi đính kèm ảnh | Màn hình `Tạo vé`, `Nhấn gửi` | `POST /api/tickets`<br>`POST /api/tickets/:id/attachments` | Bảng `Ticket`, `Attachment` |
 | **REQ-HD-08** | **US-HD-01.2:** Khách hàng và IT trao đổi qua khung chat | Màn hình `Chi tiết vé` | `POST /api/tickets/:id/comments` | Bảng `TicketComment` |
