@@ -77,7 +77,3 @@ Nếu nhân viên nhận phản hồi nhưng vấn đề chưa hết → quay l�
 
 ---
 
-## Cách dùng file này
-
-- Copy phần code trong khối \`\`\`mermaid ở trên, dán vào file `user-flow.mmd` trong repo, hoặc dán trực tiếp vào Obsidian/GitHub (đều tự render thành sơ đồ).
-- Đây là **bản nháp Ngọc soạn dựa trên 5 Story đã thống nhất** — Linh (người phụ trách chính thức PRD + user-flow) nên rà lại và điều chỉnh nếu có thay đổi nghiệp vụ.
